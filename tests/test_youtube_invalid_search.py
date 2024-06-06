@@ -15,4 +15,4 @@ def test_youtube_invalid_search(driver):
     home_page = HomePage(driver)
     home_page.search("asffojhwewijbgqwqpuigbpquwiebphiwfQFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFebfhipwebweibvewvweib")
     results_page = SearchResultsPage(driver)
-    assert len(results_page.get_video_titles()) == 0  # Ожидаем, что не будет результатов
+    assert len(results_page.get_video_titles()) == 0
