@@ -10,7 +10,6 @@ def driver():
     yield driver
     driver.quit()
 
-# Используем декоратор @pytest.mark.parametrize для передачи разных значений в тест
 @pytest.mark.parametrize("search_term", ["Selenium testing", "Python tutorials", "QA Automation"])
 def test_youtube_search(driver, search_term):
     driver.get("https://www.youtube.com")
