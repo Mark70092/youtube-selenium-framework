@@ -7,4 +7,4 @@ class SearchResultsPage(BasePage):
         self.video_titles = (By.ID, 'video-title')
 
     def get_video_titles(self):
-        return [title.text for title in self.find_elements(self.video_titles)]
+        return [title.text for title in self.driver.find_elements(*self.video_titles)]

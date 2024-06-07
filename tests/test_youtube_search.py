@@ -1,7 +1,7 @@
 import pytest
 from selenium import webdriver
-from pages.home_page import HomePage
-from pages.search_results_page import SearchResultsPage
+from page.home_page import HomePage
+from page.search_results_page import SearchResultsPage
 from utils.browser import get_driver
 
 @pytest.fixture

@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from pages.home_page import HomePage
+from page.home_page import HomePage
 from utils.browser import get_driver
 
 @pytest.fixture
